@@ -40,20 +40,44 @@
 
     <p>Select a vehicle and IOX state and then hit "send" to send a message to the device, turning the IOX on or off.</p>
 
-    <select id="ioxoutput-vehicles" class="ioxoutput checkmateFormEditField">
-      <option disabled="disabled">Select a vehicle</option>
-    </select>
+    <div id="ioxoutput-error"></div>
 
-    <select id="ioxoutput-state" class="ioxoutput checkmateFormEditField">
-      <option>On</option>
-      <option>Off</option>
-    </select>
+    <div class="column">
+      <div id="margin">
+        <fieldset class="inset">
+          <legend id="legends" >Vehicles</legend>
+          <div class="legend3"><input id="myInput" type="search" placeholder="Search vehicles. . ." class="geotabFormEditField"/></div>
+          <div id="users_usersId" class="checkmateListBuilder">
+            <ul class="checkmateListTable" id="vehicleList">
+            </ul>
+          </div>
+        </fieldset>
+      </div>
+    </div>
 
-    <button id="ioxoutput-send" disabled="disabled" class="geotabButton">Send</button>
+    <div class="column">
+      <div id="margin">
+        <fieldset class="inset">
+          <legend id="legends2">Vehicle Selected</legend>
+          <div class="checkmateListBuilder">
+            <ul class="checkmateListTable" id="vehicleSelectedList">
+            </ul>
+            <div class="centeredButtons">
+              <button id="turnIOXon" style="display: none;" class="geotabButton positiveButton">Turn IOX On</button>
+              <button id="turnIOXoff" style="display: none;" class="geotabButton negativeButton">Turn IOX Off</button>
+            </div>
+          </div>
+        </fieldset>
+      </div>
+    </div>
+    </div>
 
     <div id="ioxoutput-history"></div>
 
-    <div id="ioxoutput-error"></div>
+
+
+
+
 
   </div>
 

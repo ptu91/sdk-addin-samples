@@ -1,3 +1,24 @@
+.column {
+    float: left;
+    width: 50%;
+}
+
+#legends {
+    font-weight: 700;
+    color: #25477b;
+    fill: #25477b;
+    text-transform: uppercase;
+    font-size: 1.5em;
+}
+
+#legends2 {
+    font-weight: 700;
+    color: #25477b;
+    fill: #25477b;
+    text-transform: uppercase;
+    font-size: 1em;
+}
+
 #ioxoutput-loading {
 	position: absolute;
 	bottom: 40px;
@@ -34,3 +55,24 @@
 	padding: 5px;
 	width: 295px;
 }
+
+.dropdown-content {
+	display: block;
+	position: absolute;
+	background-color: #f6f6f6;
+	min-width: 230px;
+	overflow: auto;
+	border: 1px solid #ddd;
+	z-index: 1;
+  }
+
+  .dropdown-content a {
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+  }
+
+	.alex {
+	  background-color: red;
+  }
